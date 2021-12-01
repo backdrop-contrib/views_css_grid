@@ -1,0 +1,7 @@
+name = Views CSS Grid
+description = Provides ability to put Views content in responsive columns using CSS.
+version = 1.0.0
+backdrop = 1.x
+type = module
+package = Views
+dependencies[] = views

@@ -1,0 +1,15 @@
+html {
+    font-size: initial;
+}
+
+.breadcrumb {
+    padding: inherit;
+    margin-bottom: inherit;
+    list-style: inherit;
+    background-color: inherit;
+    border-radius: inherit;
+}
+
+.views-displays .label {
+    color: #666666;
+}

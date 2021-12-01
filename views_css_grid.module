@@ -1,0 +1,43 @@
+<?php
+/**
+ * @file
+ * CSS Grid  - Responsive CSS grid.
+ */
+
+/**
+ * Implements hook_autoload_info.
+ */
+function views_css_grid_autoload_info() {
+  return array(
+    'views_css_grid_fill_plugin_style' => '/styles/fill/views_css_grid_fill_plugin_style.inc',
+    'views_css_grid_fit_plugin_style' => '/styles/fit/views_css_grid_fit_plugin_style.inc',
+    //'views_css_grid_masonary_plugin_style' => '/styles/masonary/views_css_grid_masonary_plugin_style.inc',
+  );
+}
+
+/**
+ * Implements hook_views_api().
+ */
+function views_css_grid_views_api() {
+  $module_path = backdrop_get_path('module', 'views_css_grid');
+  return array(
+    'api' => '3.0',
+    'path' => $module_path,
+    'template_path' => $module_path,
+  );
+}
+
+/**
+ * Implements hook_library_info().
+ */
+function views_css_grid_library_info() {
+  $libraries = array();
+  $libraries['views_css_grid'] = array(
+    'title' => 'Views CSS Grid',
+    'version' => '1.0',
+    'css' => array(
+      backdrop_get_path('module', 'views_css_grid') . '/css/views_css_grid.css' => array(),
+    ),
+  );
+  return $libraries;
+}
