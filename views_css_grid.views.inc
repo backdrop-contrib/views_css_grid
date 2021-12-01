@@ -44,14 +44,14 @@ function views_css_grid_views_plugins() {
         'uses options' => TRUE,
         //@TODO:  'uses row plugin' => FALSE, 'uses fields' => TRUE,
       ),
-      /*'views_css_grid_masonary_plugin_style' => array(
-        'title' => t('CSS Grid Masonary'),
-        'help' => t('Displays Views content in a CSS Grid Masonary Style.'),
-        'handler' => 'views_css_grid_masonary_plugin_style',
-        'theme' => 'views_css_grid_masonary_plugin_style',
-        'path' => $module_path . '/styles/masonary',
-        'theme path' => $module_path . '/styles/masonary',
-        'theme file' => 'views_css_grid_masonary_theme.inc',
+      'views_css_grid_masonry_plugin_style' => array(
+        'title' => t('CSS Grid Masonry'),
+        'help' => t('Displays Views content in a CSS Grid Masonry Style.'),
+        'handler' => 'views_css_grid_masonry_plugin_style',
+        'theme' => 'views_css_grid_masonry_plugin_style',
+        'path' => $module_path . '/styles/masonry',
+        'theme path' => $module_path . '/styles/masonry',
+        'theme file' => 'views_css_grid_masonry_theme.inc',
         'type' => 'normal',
         'parent' => 'default',
         'uses row plugin' => TRUE,
@@ -59,7 +59,7 @@ function views_css_grid_views_plugins() {
         'uses grouping' => FALSE,
         'uses options' => TRUE,
         //@TODO:  'uses row plugin' => FALSE, 'uses fields' => TRUE,
-      ), */
+      ),
     ),
   );
 }

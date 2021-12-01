@@ -31,7 +31,6 @@ if ($layout_inline == 'inline_css') {
   $css_style = '';
   $css_style = 'style="display:grid;grid-template-columns:repeat(auto-fit, minmax(' . $css_width_value . ', 1fr)); min-height:' . $css_width_height . ';"';
 
-  // The four extra dashes after 'container' below are a holding place for string replacement.
   $div_class = '';
   $div_class = '<div class="grid-repeat-container-fit" ';
   

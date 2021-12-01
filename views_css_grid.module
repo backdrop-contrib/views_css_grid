@@ -11,7 +11,7 @@ function views_css_grid_autoload_info() {
   return array(
     'views_css_grid_fill_plugin_style' => '/styles/fill/views_css_grid_fill_plugin_style.inc',
     'views_css_grid_fit_plugin_style' => '/styles/fit/views_css_grid_fit_plugin_style.inc',
-    //'views_css_grid_masonary_plugin_style' => '/styles/masonary/views_css_grid_masonary_plugin_style.inc',
+    'views_css_grid_masonry_plugin_style' => '/styles/masonry/views_css_grid_masonry_plugin_style.inc',
   );
 }
 

@@ -4,7 +4,7 @@
 Views CSS Grid
 ------------------------
 
-Provides ability to put Views content in responsive columns and rows using CSS3 Grid layout.
+Backdrop CMS Module which provides the ability to put Views content in responsive columns and rows using CSS3 Grid layout.
 
 INTRODUCTION
 ------------
@@ -16,7 +16,7 @@ Options are:-
 
 CSS Grid Fit - Works
 CSS Grid Fill - Works
-CSS Masonary - Not yet implemented
+CSS Masonry - Not yet implemented
 
 See https://css-tricks.com/auto-sizing-columns-css-grid-auto-fill-vs-auto-fit/ for information on using CSS Grid.
 
@@ -59,7 +59,7 @@ Settings:
 
     Minimum row height: Choose the minimum row height
 
-    Unit type for width and height: for the Unit or measure i.e.  px, em, ren, cm, mm, in, vh etc...
+    Unit type for width and height: for the Unit of measure i.e.  px, em, ren, cm, mm, in, vh etc...
 
 See https://www.w3schools.com/cssref/css_units.asp for all of the available options.
 

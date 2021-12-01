@@ -29,10 +29,10 @@ if ($layout_inline == 'inline_css') {
   $css_width_height = strval($layout_width_height) . $layout_width_unit;
 
   $css_style = '';
-  $css_style = 'style="display:grid;grid-template-columns:repeat(auto-fill, minmax(' . $css_width_value . ', 1fr)); min-height:' . $css_width_height . ';"';
+  $css_style = 'style="display:grid;grid-template-columns:repeat(auto-fit, minmax(' . $css_width_value . ', 1fr)); min-height:' . $css_width_height . ';"';
 
   $div_class = '';
-  $div_class = '<div class="grid-repeat-container-fill" ';
+  $div_class = '<div class="grid-repeat-container-masonry" ';
   
   print $div_class . $css_style . '>';
   
@@ -40,9 +40,15 @@ if ($layout_inline == 'inline_css') {
     print "<h3>$title</h3>";
   }
 
+  $rowcount = 0;
   foreach ($rows as $id => $row) {
+    ++$rowcount;
+    if ($rowcount > 2)
+    {
+      $rowcount = 1;
+    }
     if ($row_classes[$id]) {
-      print '<div class="' . implode(' ', $row_classes[$id]) . '">' . $row . '</div>';
+      print '<div class="' . implode(' ', $row_classes[$id]) . ' span' . $rowcount . '">' . $row . '</div>';
     }
   }
   print '</div>';
