@@ -32,7 +32,7 @@ class views_css_grid_fit_plugin_style extends views_plugin_style {
       '#title' => t('Inline CSS or Theme CSS'),
       '#options' => array('inline_css' => t('Inline CSS'), 'theme_css' => t('CSS in your theme')),
       '#default_value' => $this->options['layout_inline'],
-      '#description' => t('When enabled the Inline CSS below will be used and when disabled you will need to provide your own CSS in a theme.'),
+      '#description' => t('Inline CSS will use the settings below and the CSS in the module folder styles/fit/views_css_grid_fit.css. If you choose CSS in your theme, you will need to create your own CSS.'),
     );
     $form['layout_width_value'] = array(
       '#type' => 'number',
@@ -42,7 +42,7 @@ class views_css_grid_fit_plugin_style extends views_plugin_style {
       '#min' => 1,
       '#max' => 9999,
       '#default_value' => $this->options['layout_width_value'],
-      '#description' => t('Enter the desired width of the content or column. Use 0 to disable the CSS when using your own CSS. Default is 300px using the Unit Type of px (pixels) below.'),
+      '#description' => t('Enter the desired width of the content or column. Default is 300px using the Unit Type of px (pixels) below.'),
     );
     $form['layout_width_height'] = array(
       '#type' => 'number',
@@ -52,7 +52,7 @@ class views_css_grid_fit_plugin_style extends views_plugin_style {
       '#min' => 1,
       '#max' => 9999,
       '#default_value' => $this->options['layout_width_height'],
-      '#description' => t('Enter the minimum height of the content type. Use 0 to disable the CSS when using your own CSS. Default is 300px using the Unit Type of px (pixels) below.'),
+      '#description' => t('Enter the minimum height of the content type. Default is 300px using the Unit Type of px (pixels) below.'),
     );
     $form['layout_width_unit'] = array(
       '#type' => 'textfield',
@@ -60,7 +60,7 @@ class views_css_grid_fit_plugin_style extends views_plugin_style {
       '#size' => 20,
       '#maxlength' => 3,
       '#default_value' => $this->options['layout_width_unit'],
-      '#description' => t('Enter the desired width and heigh unite of measure. Example CSS units are px, %, cm, ren, em etc.'),
+      '#description' => t('Enter the desired width and height unit of measure. Example CSS units are px, %, cm, ren, em etc.'),
     );
   }
 }

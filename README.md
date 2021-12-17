@@ -19,7 +19,6 @@ Grid styles are:-
  - CSS Grid Fill  - Works
  - CSS Masonry    - Work in progress
 
-
 For more information about CSS Grid Fit and Fill see https://css-tricks.com/auto-sizing-columns-css-grid-auto-fill-vs-auto-fit
 
 

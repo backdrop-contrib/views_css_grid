@@ -42,7 +42,7 @@ class views_css_grid_masonry_plugin_style extends views_plugin_style {
       '#min' => 1,
       '#max' => 9999,
       '#default_value' => $this->options['layout_width_value'],
-      '#description' => t('Enter the desired width of the content or column. Use 0 to disable the CSS when using your own CSS. Default is 300px using the Unit Type of px (pixels) below.'),
+      '#description' => t('Enter the desired width of the content or column. Default is 300px using the Unit Type of px (pixels) below.'),
     );
     $form['layout_width_height'] = array(
       '#type' => 'number',
@@ -52,7 +52,7 @@ class views_css_grid_masonry_plugin_style extends views_plugin_style {
       '#min' => 1,
       '#max' => 9999,
       '#default_value' => $this->options['layout_width_height'],
-      '#description' => t('Enter the minimum height of the content type. Use 0 to disable the CSS when using your own CSS. Default is 300px using the Unit Type of px (pixels) below.'),
+      '#description' => t('Enter the minimum height of the content type. Default is 300px using the Unit Type of px (pixels) below.'),
     );
     $form['layout_width_unit'] = array(
       '#type' => 'textfield',
@@ -60,7 +60,7 @@ class views_css_grid_masonry_plugin_style extends views_plugin_style {
       '#size' => 20,
       '#maxlength' => 3,
       '#default_value' => $this->options['layout_width_unit'],
-      '#description' => t('Enter the desired width and heigh unite of measure. Example CSS units are px, %, cm, ren, em etc.'),
+      '#description' => t('Enter the desired width and height unit of measure. Example CSS units are px, %, cm, ren, em etc.'),
     );
   }
 }
