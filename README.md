@@ -4,7 +4,7 @@
 Views CSS Grid
 ------------------------
 
-Views CSS Grid allows site builders to create a resposive View of content placed into a CSS3 Grid layouts with or without adding their own CSS.
+Views CSS Grid allows site builders to create a responsive View of content placed into a CSS3 Grid layouts with or without adding their own CSS.
 
 There are facilities to add your own Grid styles.
 
